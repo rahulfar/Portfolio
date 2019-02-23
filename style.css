@@ -1,0 +1,465 @@
+
+/* Google Fonts Used */
+@import url('https://fonts.googleapis.com/css?family=Laila:600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+	background: #fff;
+}
+
+/* Thin Strip */
+.nav{
+	background-color: #FF632E;
+	height: 0.5em;
+}
+
+/* Banner */
+.banner{
+	background-color: #99D9D2;
+	height: 10em;
+}
+
+/* My Photo */
+#profile img{
+	display: block;
+	margin-top: -6em;
+  	margin-left: auto;
+ 	margin-right: auto;
+	position: relative;
+	border-radius: 8em;
+	background-size: cover;
+	background-position: center;
+	height: 15em;
+}
+
+/* About Me */
+#about h1{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Laila', serif;
+	font-size: 58px;
+	color: #AA3939;
+}
+
+.typewriter{
+  max-width: 42em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+  color: #006E5F;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+  margin-bottom: 2em;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Email Button */
+.email{
+	width: 10em;
+	text-align: center;
+	padding: 1em 2em;
+	border-radius: 30px;
+	border-style: solid;
+	border-color: orange;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.email:hover {
+	background: #E56056;
+	box-shadow: 3px 2px 20px black;
+	padding: 1em 3em;
+	border: none;
+}
+
+#touch{
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: red;
+	margin-right: 1em;
+	font-weight: bolder;
+	font-size: 1em;
+	transition: all 0.5s;
+}
+
+.email:hover #touch{
+	background-color: #E56056;
+	color: #fff;
+}
+
+.fa-envelope-open{
+	transition: all 0.5s;
+}
+
+.email:hover .fa-envelope-open{
+	background-color: #E56056;
+}
+
+.fa{
+	color: #99D9D2;
+	padding-right: 0.5em;
+}
+
+/* Social Links */
+.social{
+	margin: 2em 0em 2em 1.5em;
+	text-align: center;
+}
+
+/* Skills Column */
+section{
+	height: auto;
+}
+
+.skills{
+	background: #006E5F;
+	height: 30em;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5em;
+}
+
+#experience, #tag-line{
+	background-color: #006E5F;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.5em;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+#experience{
+	font-size: 40px;
+}
+
+#tag-line{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+/* Knowledge Field */
+.field{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: #006E5F;
+	margin-top: -18em;
+	max-width: 100%;
+    padding-left: 1.75em;
+}
+
+.front-end, .back-end, .tools{
+	flex: 1;
+	position: relative;
+	float: left;
+	text-align: center;
+	background-color: #006E5F;
+	margin: 3em;
+	padding-left: 1em;
+	margin-bottom: 2em;
+}
+
+.fa-laptop, .fa-server, .fa-star{
+	color: orange;
+	background-color: #006E5F;
+	padding-bottom: 0.5em;
+}
+
+.field ul, li{
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #006E5F;
+	color: #FF580C;
+	font-weight: bolder;
+	margin-left: -2em;
+	line-height: 1.75em;
+}
+
+.field h4{
+	background-color: #006E5F;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	font-size: 2em;
+	padding-bottom: 0.5em;
+	color: #fff;
+	margin-left: -0.5em;
+}
+
+/* Projects */
+.projects{
+	padding-top: 4em;
+	max-width: 70em;
+}
+
+#work{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 1em;
+	color: orange;
+}
+
+#tag{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 1.5em;
+	color: #006E5F;
+}
+
+.project_One, .project_Two, .project_Three{
+	margin-top: 4em;
+	padding: 2em 0em;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.flexbox-1, .flexbox-2, .flexbox-3{
+	flex: 1;
+	position: relative;
+}
+
+.project-head{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	font-weight: bolder;
+	margin-bottom: 1em;
+	color: #006E5F;
+}
+
+.web{
+	margin-bottom: 0.5em;
+	color: orange;
+}
+
+.projects .fa{
+	margin-bottom: 2em;
+	color: orange;
+}
+
+.project-detail{
+	font-family: 'Karla', sans-serif;
+	height: auto;
+	font-size: 1.5em;
+	color: #006E5F;
+	margin-bottom: 2em;
+}
+
+.projects img{
+	height: auto;
+	width: 35em;
+}
+
+.right{
+	float: right;
+	padding-left: 4em;
+}
+
+.left{
+	float: left;
+	padding-right: 4em;
+}
+
+.visit{
+	width: 10em;
+	text-align: center;
+	padding: 1em;
+	border-radius: 30px;
+	border-style: solid;
+	border-color: orange;
+	transition: all 0.5s;
+	cursor: pointer;
+	font-size: 1em;
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.visit:hover{
+	background: #E56056;
+	padding: 1em 2em 1em 2em;
+	border: none;
+	color: #fff;
+}
+
+/* Hire Me */
+.contact{
+	background-color: #D46A6A;
+	text-align: center;
+	margin-top: 6em;
+	padding: 4em;
+}
+
+#hire{
+	margin-top: 1.5em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #fff;
+	background-color: #D46A6A;
+}
+
+#available{
+	margin-top: 2em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #fff;
+	background-color: #D46A6A;
+	margin-bottom: 4em;
+}
+
+#start{
+	line-height: 4em;
+	width: 15em;
+	text-align: center;
+	padding: 1em 2em;
+	border-radius: 30px;
+	border-style: solid;
+	border-color: #fff;
+	transition: all 0.5s;
+	cursor: pointer;
+	font-size: 1em;
+	background-color: #D46A6A;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#start:hover{
+	background: #fff;
+	color: #D46A6A;
+	box-shadow: 3px 2px 20px black;
+	padding: 1em 3em;
+	border: none;
+}
+
+/* Copyright */
+footer{
+	height: auto;
+	margin-top: 4em;
+	padding: 2em;
+}
+
+#logo{
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	font-weight: lighter;
+	font-size: 2em;
+	border-radius: 50px;
+	background-color: #D46A6A;
+	color: #fff;
+	width: 1em;
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+#copyright{
+	text-align: center;
+	color: #006E5F;
+	font-family: 'Special Elite', cursive;
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+/* Responsive Layouts */
+@media screen and (max-width: 960px){
+	.projects{
+		width: 50em;
+	}
+}
+
+@media screen and (max-width: 860px){
+	.projects  img{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.projects{
+		width: 40em;
+	}
+
+	.typewriter{
+		white-space: pre-wrap;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.front-end, .back-end, .tools, .flexbox-1, .flexbox-2, .flexbox-3{
+		flex: 100%;
+	}
+
+	#experience, #work, #hire{
+		font-size: 20px;
+	}
+
+	.projects{
+		width: 30em;
+	}
+
+	.project_Two{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.project_One, .project_Three{
+		flex-wrap: wrap-reverse;
+		width: 100%;
+	}
+
+	.left, .right{
+		float: none;
+		padding: 0;
+	}
+
+	.flexbox-1 img, .flexbox-3 img{
+		
+	}
+}
+
+@media screen and (max-width: 500px){
+	.projects{
+		width: 20em;
+	}
+
+	.project-head, .project-detail{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 330px){
+	.projects{
+		width: 10em;
+	}
+
+	#tag-line{
+		font-size: 10px;
+	}
+
+}

@@ -189,7 +189,8 @@ section{
 	list-style: none;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #006E5F;
-	color: #FF580C;
+	color: #FFFE1B;
+	letter-spacing: 0.25em;
 	font-weight: bolder;
 	margin-left: -2em;
 	line-height: 1.75em;
